@@ -31,12 +31,16 @@ In Alice's directory, create a `password.txt` file in this format
 ### 4. Run the Host (Alice)
 
 Open a terminal, navigate to Alice's directory, and run
-
+```bash
+python Alice.py
+```
 
 ### 5. Run the Client (Bob)
 
 Open another terminal, navigate to Bob's directory, and run
-
+```bash
+python Bob.py
+```
 
 Enter the username and password when prompted.
 
