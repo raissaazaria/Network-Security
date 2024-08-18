@@ -16,3 +16,12 @@ This project demonstrates a simple and secure communication channel between two 
    ```bash
    python generate_key.py
 
+   This will create:
+* 'key.pem' in Alice's directory
+* 'fingerprint.txt' in Bob's directory
+
+### 2. Prepare password File
+   In Alice's directory, create a 'password.txt' file in this format:
+   ```bash
+   Bob:<hashed_password>
+
