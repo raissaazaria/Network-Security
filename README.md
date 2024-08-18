@@ -11,7 +11,8 @@ This project demonstrates a simple and secure communication channel between two 
    ```bash
    pip install rsa pycryptodome
 
-###1. Generate RSA keys and fingerprint
+### 1. Generate RSA keys and fingerprint
    First generate the RSA keys and fingerprint using the 'generate_key.py' script:
    ```bash
    python generate_key.py
+
