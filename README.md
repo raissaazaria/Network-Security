@@ -11,7 +11,7 @@ Ensure you have Python installed. Then, install the required packages
 
 ### 2. Generate RSA Keys
 
-Run the following script to generate the necessary RSA keys:
+Run the following script to generate the necessary RSA keys
 
 
 This will create:
@@ -20,17 +20,17 @@ This will create:
 
 ### 3. Prepare Password File
 
-In Alice's directory, create a `password.txt` file in this format:
+In Alice's directory, create a `password.txt` file in this format
 
 
 ### 4. Run the Host (Alice)
 
-Open a terminal, navigate to Alice's directory, and run:
+Open a terminal, navigate to Alice's directory, and run
 
 
 ### 5. Run the Client (Bob)
 
-Open another terminal, navigate to Bob's directory, and run:
+Open another terminal, navigate to Bob's directory, and run
 
 
 Enter the username and password when prompted.
