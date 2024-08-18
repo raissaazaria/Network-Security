@@ -6,7 +6,7 @@ This project demonstrates secure communication between two parties (Alice and Bo
 
 ### 1. Install Python and Dependencies
 
-Ensure you have Python installed. Then, install the required packages:
+Ensure you have Python installed. Then, install the required packages
 
 
 ### 2. Generate RSA Keys
