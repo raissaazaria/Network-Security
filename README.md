@@ -10,3 +10,8 @@ This project demonstrates a simple and secure communication channel between two 
 2. **Required Packages**: Install the required Python packages:
    ```bash
    pip install rsa pycryptodome
+
+###1. Generate RSA keys and fingerprint
+   First generate the RSA keys and fingerprint using the 'generate_key.py' script:
+   ```bash
+   python generate_key.py
