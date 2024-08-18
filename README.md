@@ -1,27 +1,42 @@
-# 🔐 Secure UDP Communication: Alice & Bob 
+# 🔐 Secure UDP Communication: Alice & Bob's 
 
-This project demonstrates a simple and secure communication channel between two parties, Alice and Bob, using Python's UDP sockets and cryptographic techniques like RSA and ARC4.
+This project demonstrates secure communication between two parties (Alice and Bob) using UDP sockets and cryptography in Python.
 
-## 🚀 How to Run
+## How to Run
 
-### Prerequisites
+### 1. Install Python and Dependencies
 
-1. **Python**: Make sure you have Python installed. If not, download it from [python.org](https://www.python.org/downloads/).
-2. **Required Packages**: Install the required Python packages:
-   ```bash
-   pip install rsa pycryptodome
+Ensure you have Python installed. Then, install the required packages:
 
-### 1. Generate RSA keys and fingerprint
-   First generate the RSA keys and fingerprint using the 'generate_key.py' script:
-   ```bash
-   python generate_key.py
 
-   This will create:
-* 'key.pem' in Alice's directory
-* 'fingerprint.txt' in Bob's directory
+### 2. Generate RSA Keys
 
-### 2. Prepare password File
-   In Alice's directory, create a 'password.txt' file in this format:
-   ```bash
-   Bob:<hashed_password>
+Run the following script to generate the necessary RSA keys:
+
+
+This will create:
+- `key.pem` in Alice's directory.
+- `fingerprint.txt` in Bob's directory.
+
+### 3. Prepare Password File
+
+In Alice's directory, create a `password.txt` file in this format:
+
+
+### 4. Run the Host (Alice)
+
+Open a terminal, navigate to Alice's directory, and run:
+
+
+### 5. Run the Client (Bob)
+
+Open another terminal, navigate to Bob's directory, and run:
+
+
+Enter the username and password when prompted.
+
+### 6. Start Communicating
+
+Once connected, you can exchange secure messages. Type `exit` to close the connection.
+
 
