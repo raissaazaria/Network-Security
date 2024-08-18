@@ -6,7 +6,12 @@ This project demonstrates secure communication between two parties (Alice and Bo
 
 ### 1. Install Python and Dependencies
 
-Ensure you have Python installed. Then, install the required packages
+Ensure that Python have been installed. Then, install the required packages 
+```bash
+pip install rsa pycryptodome
+```
+
+We use PyCryptodome for implementing the RC4 stream cipher (ARC4), which encrypts and decrypts messages securely during communication between Alice and Bob.
 
 
 ### 2. Generate RSA Keys
