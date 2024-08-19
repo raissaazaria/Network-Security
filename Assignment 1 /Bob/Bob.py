@@ -4,6 +4,9 @@ import rsa
 import os
 from Crypto.Cipher import ARC4
 
+#Declare the global variable
+global pk
+
 #Load fingerprint of Alice's public key
 fingerprint_file = "fingerprint.txt"
 with open(fingerprint_file, "r") as f:
@@ -25,7 +28,7 @@ sock.sendto(f"{username},{nb.hex()}".encode(), ("localhost", 5555))
 #Receive public key and NA from Host
 data, _ = sock.recvfrom(1024)
 alice, pk_hex, na_hex = data.decode().split(",")
-pk = rsa.PublicKey.load_pkcs1(pk_hex.encode())
+pk = rsa.PublicKey.load_pkcs1(pk_hex.encode())  # `pk` is global
 na = bytes.fromhex(na_hex.strip())
 
 #Verify public key
