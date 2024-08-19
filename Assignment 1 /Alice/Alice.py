@@ -25,7 +25,7 @@ sock.bind(("localhost", 5555))
 print("Host is running and listening on port 5555...")
 
 while True:
-    # recieve message from bob
+    # receive message from bob
     data, addr = sock.recv(1024)
     username, nb = data.encode().split(",")
     username = username.strip()
@@ -36,7 +36,7 @@ while True:
     response = f"Alice,{public_key.save_pkcs1().decode()},{na.hex()}"
     sock.sendto(response.encode(), addr)
 
-    # recieve encrypted password and key from client
+    # receive encrypted password and key from client
     data, _ = sock.recvfrom(1024)
     encrypted_pw_k = data
 
@@ -72,6 +72,6 @@ while True:
             if msg.decode() == "exit":
                 print("Connection Closed.")
                 break
-            print("Recieved message:", msg.decode())
+            print("Received message:", msg.decode())
         else:
             print("Decryption Error")
